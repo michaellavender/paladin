@@ -1,0 +1,16 @@
+[
+  {
+    "id": "", 
+    "name":  "Barbarian",
+    "description":  "",
+    "keyabilities": ["CON", "STR"],
+    "abilitybonuses": [
+      { "CON": 1 },
+      { "STR": 1 }
+    ],
+    "skills":  [
+
+    ]
+  }
+
+]

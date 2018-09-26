@@ -1,0 +1,16 @@
+[
+  {
+    "name": "dwarf",
+    "description":  "Lorem ipsum", 
+    "abilitybonuses":  [
+      { "CON": 1 }
+    ],
+    "subraces":  [
+      {
+        "id": "",
+        "name": "dwarf",
+        "description":  "Lorem ipsum"
+      }
+    ] 
+  }
+]
