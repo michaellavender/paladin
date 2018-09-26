@@ -1,14 +1,18 @@
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-</div>
-<h2>Get started: </h2>
-<ul>
-  <li>
-    <h2><a [routerLink]="['/character']">Create a Character</a></h2>
-  </li>
-</ul>
+<div class="off-canvas-wrapper">
+	<div class="off-canvas-content">
+		<div class="fixed-for-small sticky-for-medium-up">
+			<div class="title-bar" data-responsive-toggle="responsive-menu" data-hide-for="medium">
+			  <button class="menu-icon" type="button" data-toggle="responsive-menu"></button>
+			  <div class="title-bar-title">Welcome to {{ title }}</div>
+			</div>
+		</div>
 
-<router-outlet></router-outlet>
+		<div class="collapse expanded row">
+		<div class="small-12 medium-9 large-10 medium-push-3 large-push-2 columns">
+			<router-outlet></router-outlet>
+		</div>
+		</div>
+	</div>
+</div>
+
 

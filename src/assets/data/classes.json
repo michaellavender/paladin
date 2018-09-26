@@ -1,7 +1,8 @@
 [
   {
-    "id": "", 
+    "id": "BARB",
     "name":  "Barbarian",
+	"image": "barbarian.jpg",
     "description":  "",
     "keyabilities": ["CON", "STR"],
     "abilitybonuses": [
@@ -9,8 +10,72 @@
       { "STR": 1 }
     ],
     "skills":  [
-
     ]
+  },
+  {
+    "id": "BARD",
+    "name":  "Bard",
+	"image": "bard.jpg",
+    "description":  ""
+  },
+  {
+    "id": "CLERIC",
+    "name":  "Cleric",
+	"image": "cleric.jpg",
+    "description":  ""
+  },
+  {
+    "id": "DRUID",
+    "name":  "Druid",
+	"image": "druid.jpg",
+    "description":  ""
+  },
+  {
+    "id": "FIGHTER",
+    "name":  "Fighter",
+	"image": "fighter.jpg",
+    "description":  ""
+  },
+  {
+    "id": "MONK",
+    "name":  "Monk",
+	"image": "monk.jpg",
+    "description":  ""
+  },
+  {
+    "id": "PALADIN",
+    "name":  "Paladin",
+	"image": "paladin.jpg",
+    "description":  ""
+  },
+  {
+    "id": "RANGER",
+    "name":  "Ranger",
+	"image": "ranger.jpg",
+    "description":  ""
+  },
+  {
+    "id": "ROGUE",
+    "name":  "Rogue",
+	"image": "rogue.jpg",
+    "description":  ""
+  },
+  {
+    "id": "SORCERER",
+    "name":  "Sorcerer",
+	"image": "sorcerer.jpg",
+    "description":  ""
+  },
+  {
+    "id": "WARLOCK",
+    "name":  "Warlock",
+	"image": "warlock.jpg",
+    "description":  ""
+  },
+  {
+    "id": "WIZARD",
+    "name":  "Wizard",
+	"image": "wizard.jpg",
+    "description":  ""
   }
-
 ]

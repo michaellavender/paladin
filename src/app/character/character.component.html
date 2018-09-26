@@ -1,3 +1,6 @@
-<div>
-This is the character component
+<div *ngFor="let cclass of classes">
+	<img width="150"  src="assets/img/{{cclass.image}}" />
+	<div>{{cclass.name}}</div>
+	<div>HP: {{cclass.hpdie}} at 1st level then 1d{{cclass.hpdie}} (or {{cclass.hpalt}}) each level after</div>
+
 </div>
