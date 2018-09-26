@@ -8,7 +8,7 @@ export interface ICharacterModel {
 
 @Injectable()
 export class CharacterService {
-	ICharacterModel currentCharacter;
+  currentCharacter: ICharacterModel;
 	
 	constructor() {
 		this.currentCharacter = {

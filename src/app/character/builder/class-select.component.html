@@ -1,0 +1,8 @@
+<div class="row small-up-2 medium-up-3 large-up-4">
+  <div class="column column-block" *ngFor="let cclass of classes">
+    <img width="150"  src="assets/img/{{cclass.image}}" />
+    <div>{{cclass.name}}</div>
+    <div>HP: {{cclass.hpdie}} at 1st level then 1d{{cclass.hpdie}} (or {{cclass.hpalt}}) each level after</div>
+
+  </div>
+</div>

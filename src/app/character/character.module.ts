@@ -6,23 +6,26 @@ import { RouterModule, Router, Routes } from '@angular/router';
 
 import { CharacterComponent } from './character.component';
 import { CharacterService } from './character.service';
+import { BuilderModule } from './builder/builder.module';
 
 const routes: Routes = [
-  { path: '', component: CharacterComponent }
+  { path: '', component: CharacterComponent },
+  { path: 'builder', loadChildren: () => BuilderModule }
 ];
 
 @NgModule({
   imports: [
     BrowserModule,
-	HttpClientModule,
-	RouterModule.forChild(routes)
+	  HttpClientModule,
+    RouterModule.forChild(routes),
+    BuilderModule
   ],
   declarations: [
     CharacterComponent
   ],
   providers: [
-	{ provide: APP_BASE_HREF, useValue: '/' },
-	CharacterService
+    { provide: APP_BASE_HREF, useValue: '/' },
+    CharacterService
   ]
 })
 export class CharacterModule { }

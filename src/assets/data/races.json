@@ -1,7 +1,8 @@
 [
   {
     "name": "dwarf",
-    "description":  "Lorem ipsum", 
+    "description": "Lorem ipsum",
+    "race": "dwarf.jpg",
     "abilitybonuses":  [
       { "CON": 1 }
     ],

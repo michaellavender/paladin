@@ -5,17 +5,10 @@ import { HttpClient, HttpParams } from '@angular/common/http'
   templateUrl: './character.component.html'
 })
 export class CharacterComponent {
-	classes: any[] = [];
+	  classes: any[] = [];
 
     constructor(private httpClient: HttpClient) { }
 
-	ngOnInit() {
-		console.log(this.httpClient.get);
-		
-        this.httpClient.get('/assets/data/classes.json')
-			.subscribe(data => {
-
-            this.classes = data;
-        });
+	  ngOnInit() {
     }
 }

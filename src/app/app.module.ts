@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { CharacterModule } from './character/character.module';
 
 const appRoutes: Routes = [
-  { path: 'character', loadChildren: () => CharacterModule },
+  { path: 'character', loadChildren: () => CharacterModule }
 ];
 
 @NgModule({
