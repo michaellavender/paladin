@@ -18,19 +18,19 @@
       </div>
     </div>
     <div class="the-bag-key">
-      <a href="">armor</a>
-      <a href="">weapons</a>
-      <a href="">magic</a>
-      <a href="">tools</a>
-      <a href="">abilities</a>
+      <a class="key-trigger" (click)="this.showBag()">armor</a>
+      <a class="key-trigger" (click)="this.showBag()">weapons</a>
+      <a class="key-trigger" (click)="this.showBag()">magic</a>
+      <a class="key-trigger" (click)="this.showBag()">tools</a>
+      <a class="key-trigger" (click)="this.showBag()">abilities</a>
     </div>
-    <div class="the-bag">
-      <h3 class="contents-title">Armor</h3>
-      <div class="bag-items">
-        <div>
-          <div>picture</div>
-          <div>label</div>
-        </div>
+  </div>
+  <div class="the-bag" [class.expand]="expanded">
+    <h3 class="contents-title">Armor</h3>
+    <div class="bag-items">
+      <div>
+        <div>picture</div>
+        <div>label</div>
       </div>
     </div>
   </div>

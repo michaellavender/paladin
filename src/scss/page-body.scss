@@ -1,47 +1,66 @@
 .page-body {
-	.grid-wrapper {
-		&>.cell {
-			&:nth-child(1n) {
-				background-color: blue;
-			}
-			&:nth-child(2n) {
-				background-color: beige;
-			}
-			.section-img {
-				img {}
-				.sort-options {}
-			}
-			.section-details {
-				h2 {
-					width: 100%;
-				}
-				.specs {
-					.dsi {}
-					.attribute {
-						&.primary {}
-						&.secondary {}
-					}
-				}
-				.pick-me {}
-				.summary {}
-			}
-			.the-bag-key {
-				border-top: 1px solid $light-gray;
-				@include flexbox;
-				@include justify-content(space-around);
-			}
-			.the-bag {
-				transition: height $trans-typ;
-				display: none;
-				height: 0;
-				width: 100vw;
-				background-color: $dark-gray;
-				overflow: hidden;
-				&.expand {
-					height: auto;
-					display: block;
-				}
-			}
-		}
-	}
+  .grid-wrapper {
+    & > .cell {
+      &:nth-child(1n) {
+        background-color: blue;
+      }
+
+      &:nth-child(2n) {
+        background-color: beige;
+      }
+
+      .section-img {
+        img {
+        }
+
+        .sort-options {
+        }
+      }
+
+      .section-details {
+        h2 {
+          width: 100%;
+        }
+
+        .specs {
+          .dsi {
+          }
+
+          .attribute {
+            &.primary {
+            }
+
+            &.secondary {
+            }
+          }
+        }
+
+        .pick-me {
+        }
+
+        .summary {
+        }
+      }
+
+      .the-bag-key {
+        border-top: 1px solid $light-gray;
+        @include flexbox;
+        @include justify-content(space-around);
+      }
+    }
+
+    .the-bag {
+      position: fixed;
+      top: calc(50% - 100px);
+      transition: height $trans-typ;
+      height: 0;
+      width: 100vw;
+      background-color: $dark-gray;
+      overflow: hidden;
+
+      &.expand {
+        height: 200px;
+      }
+    }
+  }
 }

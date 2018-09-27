@@ -8,6 +8,8 @@ import { CharacterService } from '@character/character.service'
   templateUrl: './class-select.component.html'
 })
 export class ClassSelectComponent {
+  expanded: boolean = false;
+
   constructor(
     private readonly router: Router,
     private readonly chracterSvc: CharacterService,
@@ -16,5 +18,9 @@ export class ClassSelectComponent {
   }
 
   ngOnInit() {
+  }
+
+  showBag() {
+    this.expanded = true;
   }
 }
