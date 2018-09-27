@@ -6,12 +6,16 @@
     "abilitybonuses":  [
       { "CON": 1 }
     ],
-    "subraces":  [
+    "subraces": [
       {
         "id": "",
         "name": "dwarf",
         "description":  "Lorem ipsum"
       }
-    ] 
+    ],
+    "skills": {
+      "count": 1,
+      "from": [] 
+    } 
   }
 ]

@@ -1,0 +1,40 @@
+
+html {
+	height: 100vh;
+	overflow: hidden;
+}
+.page-wrapper {
+	@include flexbox;
+	@include flex-direction(column);
+	height: 100vh;
+	.page-body {
+		@include flex-grow(1);
+		overflow-y: auto;
+	}
+}
+select {  //this shit needs to be adjusted at the foundation level
+	padding-top:0 !important;
+	padding-bottom: 0 !important;
+	height: 30px !important;
+	margin-bottom: 0 !important;
+}
+
+
+
+//this is for the old thingy
+.navigation {
+	position:fixed;
+	width: 100%;
+	text-align: center;
+	height:2rem;
+	background: white;
+	border-bottom: 1px solid #606060;
+	a {
+		line-height: 2rem;
+		text-transform: uppercase;
+		color: #37b9da;
+		&:first-child {
+			margin-right: 2rem;
+		}
+	}
+}

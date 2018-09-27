@@ -1,0 +1,21 @@
+.page-foot {
+	position:fixed;
+	bottom: 0;
+	width: 100vw;
+	& >.grid-x {
+		height: 40px;
+		& > .cell {
+			padding: 0 20px;
+			&:first-child div {
+				border: 1px solid $light-gray;
+				border-bottom: none;
+			}
+			&:last-child div {
+				background-color: red;
+			}
+			div {
+				height: 100%;
+			}
+		}	
+	}
+}

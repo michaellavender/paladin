@@ -1,0 +1,111 @@
+[
+  {
+    "id": "AH",
+    "name": "Animal Handling",
+    "ability": "WIS",
+    "description": ""
+  },
+  {
+    "id": "ACR",
+    "name": "Acrobatics",
+    "ability": "DEX",
+    "description": ""
+  },
+  {
+    "id": "ATH",
+    "name": "Athletics",
+    "ability": "STR",
+    "description": ""
+  },
+  {
+    "id": "ARC",
+    "name": "Arcana",
+    "ability": "INT",
+    "description": ""
+  },
+  {
+    "id": "DEC",
+    "name": "Deception",
+    "ability": "CHA",
+    "description": ""
+  },
+  {
+    "id": "HIST",
+    "name": "History",
+    "ability": "INT",
+    "description": ""
+  },
+  {
+    "id": "INS",
+    "name": "Insight",
+    "ability": "WIS",
+    "description": ""
+  },
+  {
+    "id": "INT",
+    "name": "Intimidation",
+    "ability": "CHA",
+    "description": ""
+  },
+  {
+    "id": "INV",
+    "name": "Investigation",
+    "ability": "INT",
+    "description": ""
+  },
+  {
+    "id": "MED",
+    "name": "Medicine",
+    "ability": "WIS",
+    "description": ""
+  },
+  {
+    "id": "NAT",
+    "name": "NATURE",
+    "ability": "INT",
+    "description": ""
+  },
+  {
+    "id": "PERC",
+    "name": "Perception",
+    "ability": "WIS",
+    "description": ""
+  },
+  {
+    "id": "PERF",
+    "name": "Performance",
+    "ability": "CHA",
+    "description": ""
+  },
+  {
+    "id": "PERS",
+    "name": "Persuasion",
+    "ability": "CHA",
+    "description": ""
+  },
+  {
+    "id": "REL",
+    "name": "Religion",
+    "ability": "INT",
+    "description": "Now, let me explain why everything you belive is wrong"
+  },
+  {
+    "id": "SLI",
+    "name": "Slight of Hand",
+    "ability": "DEX",
+    "description": "Pay no attention to the man behind the curtain"
+  },
+  {
+    "id": "STL",
+    "name": "Stealth",
+    "ability": "DEX",
+    "description": "Float like a butterfly..."
+  },
+  {
+    "id": "SUR",
+    "name": "Survival",
+    "ability": "WIS",
+    "description": ""
+  }
+
+]

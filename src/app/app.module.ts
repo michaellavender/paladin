@@ -15,11 +15,11 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
-	RouterModule.forRoot(
+	  RouterModule.forRoot(
       appRoutes,
       { enableTracing: true } // <-- debugging purposes only
     ),
-	CharacterModule
+	  CharacterModule
   ],
   providers: [],
   bootstrap: [AppComponent]

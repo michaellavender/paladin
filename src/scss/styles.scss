@@ -1,4 +1,13 @@
-//GENERAL IMPORTS AND INCLUDES
+@import 'settings';
+@import 'variables';
+@import 'mixins';
+@import 'global';
+@import 'tile-page';
+@import 'header';
+@import 'page-body';
+@import 'page-foot';
+
+// Foundation-sides
 @import '~foundation-sites/scss/foundation';
 @include foundation-everything(true);
 
@@ -6,4 +15,3 @@
 @import '~motion-ui/motion-ui';
 @include motion-ui-transitions;
 @include motion-ui-animations;
-

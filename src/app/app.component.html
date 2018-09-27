@@ -1,17 +1,56 @@
-<div class="off-canvas-wrapper">
-	<div class="off-canvas-content">
-		<div class="fixed-for-small sticky-for-medium-up">
-			<div class="title-bar" data-responsive-toggle="responsive-menu" data-hide-for="medium">
-			  <button class="menu-icon" type="button" data-toggle="responsive-menu"></button>
-			  <div class="title-bar-title">Welcome to {{ title }}</div>
-			</div>
+<div class="page-wrapper">
+  <div class="page-head">
+    <div class="identity">Welcome to {{title}}</div>
+		<div class="walk-through">
+		  <div class="step-nav">
+		    <ul class="no-bullet">
+		      <!-- this is some sort of horizontal scroller and selector -->
+		      <li class="current"><a><span>1</span>Class</a></li>
+		      <li><a><span>2</span>Race</a></li>
+		      <li><a><span>3</span>Background</a></li>
+		      <li><a><span>4</span>Stats</a></li>
+		      <li><a><span>5</span>Gear</a></li>
+		      <li><a><span>6</span>Magic</a></li>
+		    </ul>
+		  </div>
+		  <div class="filters"> <!-- need to be able to clear this -->
+		    <label>Narrow it down</label>
+		    <div>
+		      <select> <!--definitely want to use a control that has more flexible styling here | maybe Foundation dropdown-->
+		        <option value="" hidden class="hint-text">Charater Trait</option>
+		        <option>Strength</option>
+		        <option>Dexterity</option>
+		        <option>Constitution</option>
+		        <option>Intelligence</option>
+		        <option>Wisdom</option>
+		        <option>Charisma</option>
+		      </select>
+		    </div>
+		    <label>or</label>
+		    <div>
+		      <select> <!--definitely want to use a control that has more flexible styling here | maybe Foundation dropdown-->
+		        <option value="" hidden class="hint-text">Party Role</option>
+		        <option>Melee Attack</option>
+		        <option>Magic Attack</option>
+		        <option>Magic Support</option>
+		        <option>Stealth</option>
+		        <option>Support</option>
+		      </select>
+		    </div>
+		  </div>
 		</div>
+    <div class="head-actions">
+      <div class="guest">
+        <a href="">Sign In</a>
+      </div>
+      <div class="member">
+        <!-- badges go here -->
+      </div>
+    </div>
+	</div>
 
-		<div class="collapse expanded row">
-		<div class="small-12 medium-9 large-10 medium-push-3 large-push-2 columns test-style">
+  <div class="page-body">
 			<router-outlet></router-outlet>
-		</div>
-		</div>
 	</div>
 </div>
 

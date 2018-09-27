@@ -1,0 +1,99 @@
+.bottom-flex {
+	@include flexbox;
+	@include align-items(flex-end);
+}
+.bottom-flex-grow {
+	@extend .bottom-flex;
+	@include flex-grow(1);
+}
+.page-head {
+	@extend .bottom-flex;
+	height: 50px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #ccc;
+
+// start character wizard -----------------------------------
+	.walk-through {
+		@extend .bottom-flex-grow;
+		.filters {
+			@extend .bottom-flex-grow;
+		}
+		.step-nav {
+			padding: 0 3rem;
+			ul {
+				margin-bottom: 0;
+				li {
+					display: inline-block;
+					margin-right: .667rem;
+					font-size: .867rem;
+					line-height:0;
+					a {
+						color: $light-gray;
+						span {
+							@include numbersize(15px);
+							display: inline-block;
+							margin-right: 3px;
+							text-align: center;
+							border: 1px solid $light-gray;
+							font-size: .667rem;
+						}
+					}
+					&.current {
+						font-size: 1rem;
+						font-weight: $semibold;
+						a {
+							color: $dark-gray;
+							font-size: 1.2rem;
+							span {
+								@include numbersize(20px);
+								background-color: $dark-gray;
+								color: white; 
+								border: none;
+								font-size: .8667rem;
+							}
+						}
+					}
+				} 
+			}
+		}
+		.filters {
+			>div {
+				margin: 0 10px;
+			}
+			label { 
+				color: $light-gray;
+				line-height: 22px;
+			}
+			select {
+				color: $gray;
+				height: auto !important;
+				width: 150px;
+				border: {
+					width: 0 0 1px 0;
+					color: $light-gray;
+					style: solid;
+				}
+				font-size: .8667rem;
+				text-transform: uppercase;
+				margin: 0 10px;
+				&:focus, &:active {
+					box-shadow: none;
+					border-color: black;
+					border-width: 0 0 2px 0;
+				}
+			}
+		}
+	}
+// end character wizard -----------------------------------
+	.head-actions {
+		padding-right: 1rem;
+	}
+}
+
+
+
+
+
+
+
+
