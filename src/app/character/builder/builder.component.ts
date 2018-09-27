@@ -5,13 +5,10 @@ import { RulesService } from '@rules/rules.service'
 import { CharacterService } from '@character/character.service'
 
 @Component({
-  templateUrl: './race-select.component.html'
+  templateUrl: './builder.component.html'
 })
-export class RaceSelectComponent {
-  constructor(
-    private readonly router: Router,
-    private readonly chracterSvc: CharacterService,
-    private readonly rules: RulesService) {
+export class BuilderComponent {
+  constructor() {
 
   }
 

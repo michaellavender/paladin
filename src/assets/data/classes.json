@@ -4,18 +4,18 @@
     "name": "Barbarian",
     "image": "barbarian.jpg",
     "description": "Nearly-naked badass",
-    "hpdie": 12,
-    "hpalt": 7, 
-    "keyabilities": {
-      "count": 1,
-      "abilities": ["STR"] 
+    "hp": {
+      "start": 12,
+      "die": "1d12",
+      "alt": 7
     },
+    "keyabilities": [ "STR" ],
     "skills": {
       "count": 2,
       "from": [ "AH", "ATH", "INT", "NAT", "PER", "SUR" ]
     },
     "proficiencies": {
-      "saving-throws": ["STR", "CON"], 
+      "saving-throws": [ "STR", "CON" ],
       "armor": [ "LA", "MA", "S" ],
       "weapons": [ "SW", "MW" ]
     },
@@ -27,17 +27,17 @@
     "name": "Bard",
     "image": "bard.jpg",
     "description": "A song? For you I would enchant a rose",
-    "hpdie": 8,
-    "hpalt": 5,
-    "keyabilities": {
-      "count": 1,
-      "abilities": ["CHR"] 
+    "hp": {
+      "start": 8,
+      "die": "1d8",
+      "alt": 5
     },
+    "keyabilities": [ "CHA" ],
     "skills": {
       "count": 3
     },
     "proficiencies": {
-      "saving-throws": ["DEX", "CHR"], 
+      "saving-throws": [ "DEX", "CHA" ],
       "armor": [ "LA" ],
       "weapons": [ "SW", "HC", "LS", "RAP", "SS" ]
     },
@@ -49,12 +49,12 @@
     "name": "Cleric",
     "image": "cleric.jpg",
     "description": "Healing... And Hurting",
-    "hpdie": 8,
-    "hpalt": 5,
-    "keyabilities": {
-      "count": 1,
-      "abilities": ["WIS"] 
+    "hp": {
+      "start": 8,
+      "die": "1d8",
+      "alt": 5 
     },
+    "keyabilities": ["WIS"],
     "skills": {
       "count": 2,
       "from": [ "HIST", "INS", "MED", "PER", "REL" ]
@@ -72,18 +72,18 @@
     "name": "Druid",
     "image": "druid.jpg",
     "description": "Beware, I am nature's guardian",
-    "hpdie": 8,
-    "hpalt": 5,
-    "keyabilities": {
-      "count": 1,
-      "abilities": ["WIS"] 
+    "hp": {
+      "start": 8,
+      "die": "1d8",
+      "alt": 5
     },
+    "keyabilities": [ "WIS" ],
     "skills": {
       "count": 2,
       "from": [ "AH", "ATH", "INT", "NAT", "PER", "SUR" ]
     },
     "proficiencies": {
-      "saving-throws": ["INT", "WIS"], 
+      "saving-throws": [ "INT", "WIS" ],
       "armor": [ "LA", "MA", "S" ],
       "weapons": [ "CLUB", "DAG", "DART", "JAV", "MAC" ]
     },
@@ -95,18 +95,18 @@
     "name": "Fighter",
     "image": "fighter.jpg",
     "description": "A hammer, whether it's a nail or not",
-    "hpdie": 10,
-    "hpalt": 6,
-    "keyabilities": {
-      "count": 1,
-      "abilities": ["STR", "DEX"] 
+    "hp": {
+      "start": 10,
+      "die": "1d10",
+      "alt": 6
     },
+    "keyabilities": [ "STR", "DEX" ],
     "skills": {
       "count": 2,
       "from": [ "ACR", "AH", "ATH", "HIST", "INS", "INT", "PER", "SUR" ]
     },
     "proficiencies": {
-      "saving-throws": ["STR", "CON"], 
+      "saving-throws": [ "STR", "CON" ],
       "armor": [ "LA", "MA", "HA", "S" ],
       "weapons": [ "SW", "MW" ]
     },
@@ -118,19 +118,19 @@
     "name": "Monk",
     "image": "monk.jpg",
     "description": "Armor is an illusion to the bearer of kung fu",
-    "hpdie": 8,
-    "hpalt": 5,
-    "keyabilities": {
-      "count": 2,
-      "abilities": ["DEX", "WIS"] 
+    "hp": {
+      "start": 8,
+      "die": "1d8",
+      "alt": 5
     },
+    "keyabilities": [ "DEX", "WIS" ],
     "skills": {
       "count": 2,
       "from": [ "ACR", "ATH", "HIST", "INS", "REL", "STL" ]
     },
     "proficiencies": {
-      "saving-throws": ["STR", "DEX"], 
-      "armor": [ ],
+      "saving-throws": [ "STR", "DEX" ],
+      "armor": [],
       "weapons": [ "SW", "SS" ]
     },
     "equipment": [
@@ -140,19 +140,19 @@
     "id": "PALADIN",
     "name": "Paladin",
     "image": "paladin.jpg",
-    "description": "Watch out evil, here I come",
-    "hpdie": 10,
-    "hpalt": 6,
-    "keyabilities": {
-      "count": 2,
-      "abilities": ["STR", "CHA"] 
+    "description": "Be vigilant. Beware. Behave.",
+    "hp": {
+      "start": 10,
+      "die": "1d10",
+      "alt": 6
     },
+    "keyabilities": [ "STR", "CHA" ],
     "skills": {
       "count": 2,
       "from": [ "ATH", "INS", "INT", "MED", "PER", "REL" ]
     },
     "proficiencies": {
-      "saving-throws": ["WIS", "CHA"], 
+      "saving-throws": [ "WIS", "CHA" ],
       "armor": [ "LA", "MA", "HA", "S" ],
       "weapons": [ "SW", "MW" ]
     },
@@ -164,18 +164,18 @@
     "name": "Ranger",
     "image": "ranger.jpg",
     "description": "Frankly, I'd rather be out hunting",
-    "hpdie": 10,
-    "hpalt": 6,
-    "keyabilities": {
-      "count": 2,
-      "abilities": ["DEX", "WIS"] 
+    "hp": {
+      "start": 10,
+      "die": "1d10",
+      "alt": 6
     },
+    "keyabilities": [ "DEX", "WIS" ],
     "skills": {
       "count": 3,
       "from": [ "AH", "ATH", "INS", "INV", "NAT", "PERC", "STL", "SUR" ]
     },
     "proficiencies": {
-      "saving-throws": ["STR", "DEX"], 
+      "saving-throws": [ "STR", "DEX" ],
       "armor": [ "LA", "MA", "S" ],
       "weapons": [ "SW", "MW" ]
     },
@@ -187,18 +187,18 @@
     "name": "Rogue",
     "image": "rogue.jpg",
     "description": "A Thief!? Me!? I'm insulted!",
-    "hpdie": 8,
-    "hpalt": 5,
-    "keyabilities": {
-      "count": 1,
-      "abilities": ["DEX"] 
+    "hp": {
+      "start": 8,
+      "die": "1d8",
+      "alt": 5
     },
+    "keyabilities": [ "DEX" ],
     "skills": {
       "count": 4,
       "from": [ "ACR", "ATH", "DEC", "INS", "INT", "INV", "NAT", "PER", "STL", "SUR" ]
     },
     "proficiencies": {
-      "saving-throws": ["DEX", "INT"], 
+      "saving-throws": [ "DEX", "INT" ],
       "armor": [ "LA" ],
       "weapons": [ "SW", "HC", "LS", "RAP", "SS" ]
     },
@@ -210,19 +210,19 @@
     "name": "Sorcerer",
     "image": "sorcerer.jpg",
     "description": "Did I study? Ha! I was BORN magic",
-    "hpdie": 6,
-    "hpalt": 4,
-    "keyabilities": {
-      "count": 1,
-      "abilities": ["CHA"] 
+    "hp": {
+      "start": 6,
+      "die": "1d6",
+      "alt": 4
     },
+    "keyabilities": [ "CHA" ],
     "skills": {
       "count": 2,
       "from": [ "ARC", "DEC", "INS", "INT", "PER", "REL" ]
     },
     "proficiencies": {
-      "saving-throws": ["CON", "CHA"], 
-      "armor": [ ],
+      "saving-throws": [ "CON", "CHA" ],
+      "armor": [],
       "weapons": [ "DAG", "DAR", "SLI", "QRT", "LC" ]
     },
     "equipment": [
@@ -233,18 +233,18 @@
     "name": "Warlock",
     "image": "warlock.jpg",
     "description": "Why yes, I did make a deal with the devil",
-    "hpdie": 8,
-    "hpalt": 5,
-    "keyabilities": {
-      "count": 1,
-      "abilities": ["CHA"] 
+    "hp": {
+      "start": 8,
+      "die": "1d8",
+      "alt": 5
     },
+    "keyabilities": [ "CHA" ],
     "skills": {
       "count": 2,
       "from": [ "ARC", "DEC", "HIST", "INT", "INV", "NAT", "REL" ]
     },
     "proficiencies": {
-      "saving-throws": ["WIS", "CHA"], 
+      "saving-throws": [ "WIS", "CHA" ],
       "armor": [ "LA" ],
       "weapons": [ "SW" ]
     },
@@ -256,19 +256,19 @@
     "name": "Wizard",
     "image": "wizard.jpg",
     "description": "I'll have you know I graduated from Hogwarts, class of 423",
-    "hpdie": 6,
-    "hpalt": 4,
-    "keyabilities": {
-      "count": 1,
-      "abilities": ["INT"] 
+    "hp": {
+      "start": 6,
+      "die": "1d6",
+      "alt": 4
     },
+    "keyabilities": [ "INT" ],
     "skills": {
       "count": 2,
       "from": [ "ARC", "HIST", "INS", "INV", "MED", "REL" ]
     },
     "proficiencies": {
-      "saving-throws": ["INT", "WIS"], 
-      "armor": [ ],
+      "saving-throws": [ "INT", "WIS" ],
+      "armor": [],
       "weapons": [ "DAG", "DAR", "SLI", "QRT", "LC" ]
     },
     "equipment": [

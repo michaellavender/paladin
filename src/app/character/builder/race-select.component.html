@@ -1,5 +1,8 @@
-<div *ngFor="let race of races">
-  <img width="150" src="assets/img/{{race.image}}" />
+<div *ngFor="let race of rules.races">
+  <img width="150" src="assets/img/races/{{race.image}}" />
   <div>{{race.name}}</div>
-
+  <div>{{race.description}}</div>
+  <div *ngFor="let ab of race.abilitybonuses">
+    {{rules.ability(ab.ability).name}} +{{ab.bonus}}
+  </div>
 </div>

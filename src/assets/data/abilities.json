@@ -1,7 +1,32 @@
 [
   {
-    "id": "",
-    "name": "",
-    "description": "" 
+    "id": "STR",
+    "name": "Strength",
+    "description": "Physical power"
+  },
+  {
+    "id": "DEX",
+    "name": "Dexterity",
+    "description": "Agility and coordination"
+  },
+  {
+    "id": "CON",
+    "name": "Constitution",
+    "description": "Health and endurance"
+  },
+  {
+    "id": "INT",
+    "name": "Intelligence",
+    "description": "Reasoning and memory"
+  },
+  {
+    "id": "WIS",
+    "name": "Wisdom",
+    "description": "Perception and insight"
+  },
+  {
+    "id": "CHA",
+    "name": "Charisma",
+    "description": "Charm and personality"
   }
 ]

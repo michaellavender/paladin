@@ -1,21 +1,175 @@
 [
   {
-    "name": "dwarf",
-    "description": "Lorem ipsum",
-    "race": "dwarf.jpg",
-    "abilitybonuses":  [
-      { "CON": 1 }
+    "id": "DRAGONBORN",
+    "name": "Dragonborn",
+    "description": "",
+    "image": "dragonborn.jpg",
+    "speed": 30,
+    "alignment": {
+      "summary": "Dragonborn tend to extremes, making a conscious choice for one side or the other in the cosmic war between good and evil. Most dragonborn are good, but those who side with evil can be terrible villains.",
+      "from": [ "LG", "NG", "CG", "LE", "NE", "CE" ]
+    },
+    "size": "M",
+    "age": {
+      "base": 50,
+      "modifier": "x1d6"
+    },
+    "height": {
+      "base": 66,
+      "modifier": "+2d8"
+    },
+    "weight": {
+      "base": 175,
+      "modifier": "x2d6"
+    },
+    "abilitybonuses": [
+      {
+        "ability": "STR",
+        "bonus": 2
+      },
+      {
+        "ability": "CHA",
+        "bonus": 1
+      }
     ],
     "subraces": [
       {
-        "id": "",
-        "name": "dwarf",
-        "description":  "Lorem ipsum"
+        "id": "BLACK",
+        "name": "Black",
+        "description": "",
+        "abilities": [
+          {
+            "id": "BW",
+            "name": "Breath Weapon"
+          }
+        ]
+      },
+      {
+        "id": "BLUE",
+        "name": "Blue",
+        "description": "",
+        "abilities": [
+          {
+            "id": "BW",
+            "name": "Breath Weapon"
+          }
+        ]
       }
     ],
     "skills": {
       "count": 1,
-      "from": [] 
-    } 
+      "from": []
+    },
+    "languages": [ "COMMON", "DRACONIC" ]
+  },
+  {
+    "id": "DWARF",
+    "name": "Dwarf",
+    "description": "",
+    "image": "dwarf.png",
+    "speed": 30,
+    "alignment": {
+      "summary": "Most Dwarves are lawful, believing firmly in the benefits of a well-ordered society. They tend toward good as well, with a strong sense of Fair Play and a belief that everyone deserves to share in the benefits of a just order.",
+      "from": []
+    },
+    "size": "M",
+    "age": {
+      "base": 1,
+      "modifier": ""
+    },
+    "abilitybonuses": [
+      {
+        "ability": "CON",
+        "bonus": 2
+      }
+    ],
+    "subraces": [
+      {
+        "id": "HILL",
+        "name": "Hill",
+        "description": "As a Hill Dwarf, you have keen Senses, deep intuition, and remarkable resilience.",
+        "height": {
+          "base": 44,
+          "modifier": "+2d4"
+        },
+        "weight": {
+          "base": 115,
+          "modifier": "x2d6"
+        },
+        "abilitybonuses": [
+          {
+            "ability": "WIS",
+            "bonus": 1
+          }
+        ]
+      },
+      {
+        "id": "MOUNTAIN",
+        "name": "Mountain",
+        "description": "",
+        "height": {
+          "base": 48,
+          "modifier": "+2d4"
+        },
+        "weight": {
+          "base": 130,
+          "modifier": "x2d6"
+        },
+        "abilitybonuses": []
+      }
+    ],
+    "skills": {
+      "count": 1,
+      "from": []
+    },
+    "languages": [ "COMMON", "DWARVISH" ]
+  },
+  {
+    "id": "ELF",
+    "name": "Elf",
+    "description": "",
+    "image": "elf.jpg"
+  },
+  {
+    "id": "ELF",
+    "name": "Elf",
+    "description": "",
+    "image": "elf.jpg"
+  },
+  {
+    "id": "GNOME",
+    "name": "Gnome",
+    "description": "",
+    "image": "gnome.png"
+  },
+  {
+    "id": "HALFELF",
+    "name": "Half-Elf",
+    "description": "",
+    "image": "half-elf.png"
+  },
+  {
+    "id": "HALFORC",
+    "name": "Half-Orc",
+    "description": "",
+    "image": "half-orc.jpg"
+  },
+  {
+    "id": "HALFLING",
+    "name": "Halfling",
+    "description": "",
+    "image": "halfling.jpg"
+  },
+  {
+    "id": "HUMAN",
+    "name": "Human",
+    "description": "",
+    "image": "human.png"
+  },
+  {
+    "id": "TIEFLING",
+    "name": "Tiefling",
+    "description": "",
+    "image": "tiefling.jpg"
   }
 ]

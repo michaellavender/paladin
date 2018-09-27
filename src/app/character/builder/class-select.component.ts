@@ -1,19 +1,20 @@
 import { Component } from '@angular/core';
-import { HttpClient, HttpParams } from '@angular/common/http'
+import { Router } from '@angular/router';
+
+import { RulesService } from '@rules/rules.service'
+import { CharacterService } from '@character/character.service'
 
 @Component({
   templateUrl: './class-select.component.html'
 })
 export class ClassSelectComponent {
-  classes: any[] = [];
+  constructor(
+    private readonly router: Router,
+    private readonly chracterSvc: CharacterService,
+    private readonly rules: RulesService) {
 
-  constructor(private httpClient: HttpClient) { }
+  }
 
   ngOnInit() {
-    this.httpClient.get<any[]>('/assets/data/classes.json')
-      .subscribe(data => {
-
-        this.classes = data;
-      });
   }
 }

@@ -1,8 +1,5 @@
 import { Component } from '@angular/core';
-//import $ from 'jquery';
-//import Foundation from 'foundation-sites';
-
-//window.$ = $;
+import { RouterModule, Router, Routes } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -12,7 +9,15 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'paladin';
 
-  constructor() {}
+  constructor(private router: Router) {
+    router.errorHandler = (error) => {
+      console.log('routing error: ' + error);
+    };
+
+    router.events.subscribe(event => {
+      console.log(event);
+    });
+  }
   
   ngOnInit() {
 	  try{

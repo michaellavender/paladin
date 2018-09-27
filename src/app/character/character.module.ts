@@ -1,30 +1,34 @@
 import { NgModule } from '@angular/core';
-import { APP_BASE_HREF } from '@angular/common'
+import { CommonModule } from '@angular/common';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http'
-import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Router, Routes } from '@angular/router';
+
+import { RulesModule } from '@rules/rules.module';
 
 import { CharacterComponent } from './character.component';
 import { CharacterService } from './character.service';
-import { BuilderModule } from './builder/builder.module';
 
 const routes: Routes = [
   { path: '', component: CharacterComponent },
-  { path: 'builder', loadChildren: () => BuilderModule }
+  {
+    path: 'builder',
+    loadChildren: 'app/character/builder/builder.module#BuilderModule'
+  },
+  { path: '**', redirectTo: '' }
 ];
 
 @NgModule({
   imports: [
-    BrowserModule,
+    CommonModule,
 	  HttpClientModule,
     RouterModule.forChild(routes),
-    BuilderModule
+    RulesModule
   ],
+  exports: [RouterModule],
   declarations: [
     CharacterComponent
   ],
   providers: [
-    { provide: APP_BASE_HREF, useValue: '/' },
     CharacterService
   ]
 })

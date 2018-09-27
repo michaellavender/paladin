@@ -31,8 +31,6 @@
               ]
             },
             "scripts": [
-              "../node_modules/foundation-sites/_vendor/jquery/dist/jquery.min.js",
-              "../node_modules/foundation-sites/dist/foundation.min.js"
             ]
           },
           "configurations": {
